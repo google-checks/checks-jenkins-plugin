@@ -62,10 +62,10 @@ The plugin focuses on running as a step within a pipeline. Here are a quick expl
 
 Classes that interact with Jenkins:
 
-- [UploadToChecksStep](src/main/java/io/jenkins/plugins/upload_to_checks/UploadToChecksStep.java) is defining the parameters and name of the plugin
-- [UploadToChecksStepExecution](src/main/java/io/jenkins/plugins/upload_to_checks/UploadToChecksStepExecution.java) is the code that the plugin runs
+- [UploadToChecksStep](src/main/java/io/jenkins/plugins/googlechecks/UploadToChecksStep.java) is defining the parameters and name of the plugin
+- [UploadToChecksStepExecution](src/main/java/io/jenkins/plugins/googlechecks/UploadToChecksStepExecution.java) is the code that the plugin runs
 
 Classes that interact with Google Checks:
 
-- [GoogleChecks](src/main/java/io/jenkins/plugins/upload_to_checks/GoogleChecks.java): manage communication with Google Checks API alongs with [models](src/main/java/io/jenkins/plugins/upload_to_checks/models) to define the API responses types
-- [GoogleCredentialsHelper](src/main/java/io/jenkins/plugins/upload_to_checks/GoogleCredentialsHelper.java) and [GoogleCredentialsHelperFactory](src/main/java/io/jenkins/plugins/upload_to_checks/GoogleCredentialsHelperFactory.java) deal with Google authentication and the factory pattern help us mock the authenication when running tests
+- [GoogleChecks](src/main/java/io/jenkins/plugins/googlechecks/GoogleChecks.java): manage communication with Google Checks API alongs with [models](src/main/java/io/jenkins/plugins/googlechecks/models) to define the API responses types
+- [GoogleCredentialsHelper](src/main/java/io/jenkins/plugins/googlechecks/GoogleCredentialsHelper.java) and [GoogleCredentialsHelperFactory](src/main/java/io/jenkins/plugins/googlechecks/GoogleCredentialsHelperFactory.java) deal with Google authentication and the factory pattern help us mock the authenication when running tests
