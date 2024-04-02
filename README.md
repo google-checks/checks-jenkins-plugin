@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This pluging uploads your mobile app build (.apk, .aab or .ipa) to Google Checks to run a report.
+This plugin uploads your mobile app build (.apk, .aab or .ipa) to Google Checks to run a report.
 
 ## Getting started
 
