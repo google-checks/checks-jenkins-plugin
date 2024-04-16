@@ -13,7 +13,7 @@ Checks is a compliance platform from Google for mobile app developers that simpl
 
 ## Getting started
 
-Read our developer document at https://developers.google.com/checks/guide/ci-cd/github-actions.
+Read our developer document at https://developers.google.com/checks/guide/ci-cd/jenkins.
 
 ### Variables
 
