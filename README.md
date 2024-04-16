@@ -2,11 +2,20 @@
 
 ## Introduction
 
-This plugin uploads your mobile app build (.apk, .aab or .ipa) to Google Checks to run a report.
+This Jenkins plugin scans your mobile app using Google Checks to uncover compliance issues and data collection/sharing behaviors.
+
+Checks is a compliance platform from Google for mobile app developers that simplifies the path to privacy for development teams and the apps they’re building. Learn more at [checks.google.com](https://checks.google.com/).
+
+## Requirements
+
+- Create your Checks account. Request access at https://goo.gle/get-checks.
+- Your app to analyze is set up on Checks. For more info, read our [documention on connecting apps to Checks](https://developers.google.com/checks/guide/getting-started/connecting-apps).
 
 ## Getting started
 
-# Variables
+Read our developer document at https://developers.google.com/checks/guide/ci-cd/github-actions.
+
+### Variables
 
 |       Name        |  Type   | Default |                                                                                                                                                                                                                                      Description                                                                                                                                                                                                                                      |
 | :---------------: | :-----: | :-----: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -39,7 +48,7 @@ pipeline {
 
 ```
 
-## Run pipeline locally
+### Run pipeline locally
 
 We'll be assuming that you have some knowledge of Jenkins and Checks.
 
@@ -52,7 +61,7 @@ We'll be assuming that you have some knowledge of Jenkins and Checks.
 7. Create and run a pipeline (see [README](README.md) to find an example, and we suggest to use: `generateReport: false` at the beginning to make sure the authentication and other parameters are valid.)
 8. if you want to upload an APK file, you can place an APK file at the root of this repository, and it'll be accessible with `binaryPath: './my-app.apk'`
 
-## Run tests
+### Run tests
 
 run `mvn test` or when using [Intellij IDEA](https://www.jetbrains.com/idea/) you can open test files and run individual classes and/or tests.
 
